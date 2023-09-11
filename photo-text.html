@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Photo-text</title>
+    <style>
+        .baza {
+            width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .text1 {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 25px;
+            color: rgb(3, 77, 3);
+            transform: rotate(270deg);
+            margin-left: -700px;
+            margin-top: -400px;
+            opacity: 0;
+            animation: appear 3s infinite;
+        }
+        .text2 {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 25px;
+            color: rgb(76, 175, 14);
+            transform: rotate(270deg);
+            margin-left: -655px;
+            margin-top: 30px;
+            opacity: 0;
+            animation: appear 3s infinite 0.3s;
+        }
+        .text3 {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 25px;
+            color: rgb(47, 81, 3);
+            transform:translateX(65px) translateY(500px);
+            opacity: 0;
+            animation: appear 3s infinite 0.6s;
+        }
+        .text4 {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 25px;
+            color: orangered;
+            transform:translateX(45px) translateY(490px);
+            opacity: 0;
+            animation: appear 3s infinite 0.9s;
+        }
+        .text5 {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 25px;
+            color: rgb(202, 134, 10);
+            transform:translateX(70px) translateY(480px);
+            opacity: 0;
+            animation: appear 3s infinite;
+        }
+        .text6 {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 25px;
+            color: rgb(125, 33, 33);
+            transform:translateX(85px) translateY(480px);
+            opacity: 0;
+            animation: appear 3s infinite 0.3s;
+        }
+        .text7 {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 25px;
+            color: rgb(225, 225, 2);
+            transform: rotate(270deg);
+            margin-left: -502px;
+            margin-top: -245px;
+            opacity: 0;
+            animation: appear 3s infinite 0.6s;
+        }
+        .text8 {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 25px;
+            color: rgb(202, 134, 10);
+            transform:translateX(85px) translateY(700px);
+            opacity: 0;
+            animation: appear 3s infinite 0.9s;
+        }
+        .text9 {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 25px;
+            color: rgb(223, 152, 20);
+            transform:translateX(118px) translateY(690px);
+            opacity: 0;
+            animation: appear 3s infinite;
+        }
+        .text10 {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 25px;
+            color: rgb(225, 225, 2);
+            transform:translateX(95px) translateY(681px);
+            opacity: 0;
+            animation: appear 3s infinite 0.3s;
+        }
+        .text11 {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 25px;
+            color: rgb(125, 33, 33);
+            transform:translateX(130px) translateY(681px);
+            opacity: 0;
+            animation: appear 3s infinite 0.6s;
+        }
+        .text12 {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 25px;
+            color: rgb(3, 77, 3);
+            transform: rotate(270deg);
+            margin-left: -480px;
+            margin-top: 70px;
+            opacity: 0;
+            animation: appear 3s infinite 0.9s;
+        }
+        .text13 {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 25px;
+            color: rgb(76, 175, 14);
+            transform:translateX(173px) translateY(572px);
+            opacity: 0;
+            animation: appear 3s infinite;
+        }
+        .text14 {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 25px;
+            color: rgb(202, 134, 10);
+            transform:translateX(160px) translateY(260px);
+            opacity: 0;
+            animation: appear 3s infinite 0.3s;
+        }
+        .text15 {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 25px;
+            color: rgb(225, 225, 2);
+            transform:translateX(185px) translateY(250px);
+            opacity: 0;
+            animation: appear 3s infinite 0.6s;
+        }
+        .text16 {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 25px;
+            color: rgb(202, 134, 10);
+            transform:translateX(165px) translateY(240px);
+            opacity: 0;
+            animation: appear 3s infinite 0.9s;
+        }
+        .text17 {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 25px;
+            color: rgb(225, 225, 2);
+            transform: rotate(270deg);
+            margin-left: -420px;
+            margin-top: -275px;
+            opacity: 0;
+            animation: appear 3s infinite;
+        }
+        .text18 {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 25px;
+            color: rgb(76, 175, 14);
+            transform: rotate(270deg);
+            margin-left: -375px;
+            margin-top: -15px;
+            opacity: 0;
+            animation: appear 3s infinite 0.3s;
+        }
+        .text19 {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 25px;
+            color: rgb(76, 175, 14);
+            transform:translateX(225px) translateY(660px);
+            opacity: 0;
+            animation: appear 3s infinite 0.6s;
+        }
+        .text20 {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 25px;
+            color: rgb(76, 175, 14);
+            transform: rotate(270deg);
+            margin-left: -325px;
+            margin-top: 55px;
+            opacity: 0;
+            animation: appear 3s infinite 0.9s;
+        }
+        .text21 {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 25px;
+            color: rgb(3, 77, 3);
+            transform:translateX(250px) translateY(360px);
+            opacity: 0;
+            animation: appear 3s infinite;
+        }
+        .text22 {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 25px;
+            color: orangered;
+            transform: rotate(270deg);
+            margin-left: -283px;
+            margin-top: -65px;
+            opacity: 0;
+            animation: appear 3s infinite 0.3s;
+        }
+        .text23 {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 25px;
+            color: rgb(223, 152, 20);
+            transform: rotate(270deg);
+            margin-left: -240px;
+            margin-top: -5px;
+            opacity: 0;
+            animation: appear 3s infinite 0.6s;
+        }
+        .text24 {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 25px;
+            color: rgb(3, 77, 3);
+            transform: rotate(270deg);
+            margin-left: -175px;
+            margin-top: 95px;
+            opacity: 0;
+            animation: appear 3s infinite 0.9s;
+        }
+        .text25 {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 25px;
+            color: rgb(125, 33, 33);
+            transform: rotate(270deg);
+            margin-left: -195px;
+            margin-top: -140px;
+            opacity: 0;
+            animation: appear 3s infinite;
+        }
+        .text26 {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 25px;
+            color: rgb(225, 225, 2);
+            transform:translateX(263px) translateY(343px);
+            opacity: 0;
+            animation: appear 3s infinite 0.3s;
+        }
+        .text27 {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 25px;
+            color: rgb(76, 175, 14);
+            transform: rotate(270deg);
+            margin-left: -135px;
+            margin-top: -250px;
+            opacity: 0;
+            animation: appear 3s infinite 0.6s;
+        }
+        .text28 {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 25px;
+            color: orangered;
+            transform: rotate(270deg);
+            margin-left: -115px;
+            margin-top: 203px;
+            opacity: 0;
+            animation: appear 3s infinite 0.9s; 
+        }
+        .text29 {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 90px;
+            color: rgb(3, 77, 3);
+            transform:translateX(290px) translateY(200px);
+            opacity: 0;
+            animation: appear 3s infinite;
+        }
+        .text30 {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 25px;
+            color: rgb(125, 33, 33);
+            transform:translateX(355px) translateY(210px);
+            opacity: 0;
+            animation: appear 3s infinite 0.3s;
+        }
+        .text31 {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 25px;
+            color: rgb(76, 175, 14);
+            transform:translateX(365px) translateY(205px);
+            opacity: 0;
+            animation: appear 3s infinite 0.6s;
+        }
+        .text32 {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 25px;
+            color: rgb(76, 175, 14);
+            transform: rotate(270deg);
+            margin-left: -70px;
+            margin-top: -125px;
+            opacity: 0;
+            animation: appear 3s infinite 0.9s;
+        }
+        .text33 {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 25px;
+            color: rgb(202, 134, 10);
+            transform:translateX(450px) translateY(140px);
+            opacity: 0;
+            animation: appear 3s infinite;
+        }
+        .text34 {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 25px;
+            color: rgb(76, 175, 14);
+            transform:translateX(535px) translateY(115px);
+            opacity: 0;
+            animation: appear 3s infinite 0.3s;
+        }
+        .text35 {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 25px;
+            color: rgb(225, 225, 2);
+            transform:translateX(450px) translateY(108px);
+            opacity: 0;
+            animation: appear 3s infinite 0.6s;
+        }
+        .text36 {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 25px;
+            color: rgb(223, 152, 20);
+            transform:translateX(585px) translateY(80px);
+            opacity: 0;
+            animation: appear 3s infinite 0.9s;
+        }
+        .text37 {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 90px;
+            color: rgb(125, 33, 33);
+            transform:translateX(445px) translateY(60px);
+            opacity: 0;
+            animation: appear 3s infinite;
+        }
+        .text38 {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 25px;
+            color: rgb(223, 152, 20);
+            transform:translateX(415px) translateY(40px);
+            opacity: 0;
+            animation: appear 3s infinite 0.3s;
+        }
+        .text39 {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 25px;
+            color: rgb(223, 152, 20);
+            transform:translateX(355px) translateY(30px);
+            opacity: 0;
+            animation: appear 3s infinite 0.6s;
+        }
+        .text40 {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 25px;
+            color: rgb(223, 152, 20);
+            transform:translateX(510px) translateY(0px);
+            opacity: 0;
+            animation: appear 3s infinite 0.9s;
+        }
+        .text41 {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 25px;
+            color: rgb(202, 134, 10);
+            transform:translateX(435px) translateY(-10px);
+            opacity: 0;
+            animation: appear 3s infinite;
+        }
+        .text42 {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 25px;
+            color: rgb(223, 152, 20);
+            transform:translateX(375px) translateY(-20px);
+            opacity: 0;
+            animation: appear 3s infinite 0.3s;
+        }
+        .text43 {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 25px;
+            color: rgb(3, 77, 3);
+            transform:translateX(492px) translateY(-45px);
+            opacity: 0;
+            animation: appear 3s infinite 0.6s;
+        }
+        .text44 {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 25px;
+            color: rgb(125, 33, 33);
+            transform:translateX(472px) translateY(-53px);
+            opacity: 0;
+            animation: appear 3s infinite 0.9s;
+        }
+        .text45 {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 25px;
+            color: rgb(76, 175, 14);
+            transform: rotate(270deg);
+            margin-left: 350px;
+            margin-top: -230px;
+            opacity: 0;
+            animation: appear 3s infinite;
+        }
+        .text46 {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 25px;
+            color: rgb(223, 152, 20);
+            transform: rotate(270deg);
+            margin-left: 400px;
+            margin-top: -100px;
+            opacity: 0;
+            animation: appear 3s infinite 0.3s;
+        }
+        .text47 {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 25px;
+            color: rgb(225, 225, 2);
+            transform: rotate(270deg);
+            margin-left: 450px;
+            margin-top: -40px;
+            opacity: 0;
+            animation: appear 3s infinite 0.6s;
+        }
+        .text48 {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 25px;
+            color: rgb(3, 77, 3);
+            transform: rotate(270deg);
+            margin-left: 500px;
+            margin-top: 32px;
+            opacity: 0;
+            animation: appear 3s infinite 0.9s;
+        }
+        .text49 {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 25px;
+            color: rgb(76, 175, 14);
+            transform: rotate(270deg);
+            margin-left: 560px;
+            margin-top: -7px;
+            opacity: 0;
+            animation: appear 3s infinite;
+        }
+        @keyframes appear {
+            from {opacity: 0;}
+            to {opacity: 1;}
+        }
+    </style>
+</head>
+<body>
+    <div class="baza">
+        <div class="text1">HTML5</div>
+        <div class="text2">TECHNOLOGIES</div>
+        <div class="text3">PAGES</div>
+        <div class="text4">HOW-TO</div>
+        <div class="text5">PRACTICES</div>
+        <div class="text6">PROCESS</div>
+        <div class="text7">EXTERNAL</div>
+        <div class="text8">SERIALIZATION</div>
+        <div class="text9">DESIGNERS</div>
+        <div class="text10">CONTENTS</div>
+        <div class="text11">CREATING</div>
+        <div class="text12">BEST</div>
+        <div class="text13">HTML</div>
+        <div class="text14">PAGE</div>
+        <div class="text15">RESEARCH</div>
+        <div class="text16">REFERENCES</div>
+        <div class="text17">STRUCTURE</div>
+        <div class="text18">LANGUAGE</div>
+        <div class="text19">DIGITAL</div>
+        <div class="text20">CONCEPTUALIZATION</div>
+        <div class="text21">CSS</div>
+        <div class="text22">PLANNING</div>
+        <div class="text23">JAVASCRIPT</div>
+        <div class="text24">BROWSER</div>
+        <div class="text25">BROWSERS</div>
+        <div class="text26">INTERACTIVITY</div>
+        <div class="text27">IMAGES</div>
+        <div class="text28">HYPERLINKS</div>
+        <div class="text29">WEB</div>
+        <div class="text30">MEDIA</div>
+        <div class="text31">TEXT</div>
+        <div class="text32">ELEMENTS</div>
+        <div class="text33">DEVELOP</div>
+        <div class="text34">LINKS</div>
+        <div class="text35">ADVERTISING</div>
+        <div class="text36">MARKUP</div>
+        <div class="text37">DESIGN</div>
+        <div class="text38">MAINTENANCE</div>
+        <div class="text39">PRESENTATION</div>
+        <div class="text40">SITE</div>
+        <div class="text41">INTERACTIVE</div>
+        <div class="text42">PRODUCING</div>
+        <div class="text43">XHTML</div>
+        <div class="text44">WEBSITE</div>
+        <div class="text45">POST-PRODUCTION</div>
+        <div class="text46">PRODUCE</div>
+        <div class="text47">VALID</div>
+        <div class="text48">SELECTOR</div>
+        <div class="text49">INTERNET</div>
+    </div>
+</body>
+</html>
